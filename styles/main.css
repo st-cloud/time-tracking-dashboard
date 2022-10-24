@@ -1,0 +1,45 @@
+/* 
+sm: 520px;
+md: 768px;
+lg: 1024px;
+xl: 1200px;
+*/
+
+.box {
+    border: 5px solid pink;
+}
+
+.box.box--aside {
+    border: 5px solid green;
+}
+
+@media only screen and (min-width: 768px) {
+    .dashboard {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .box.box--aside {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+/* media queries not working when inside selectors: */
+/* .dashboard {
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.box.box--aside {
+    border: 5px solid green;
+    
+    @media only screen and (min-width: 768px) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+} */
