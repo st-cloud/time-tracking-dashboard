@@ -6,79 +6,88 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 <body>
-  <div class="dashboard">
-    <div class="box box--aside">
-      Report for
-      Jeremy Robson
-    
-      Daily
-      Weekly
-      Monthly
-    </div>
+  <main class="dashboard">
+    <section class="box box--aside">
+      <!-- add box__content div -->
+      <div class="profile">
+        <img class="profile__image" src="./media/image-jeremy.png">
+        <div class="profile__text">
+          <p class="profile__description">Report for</p>
+          <h1 class="profile__title">Jeremy Robson</h1>
+        </div>
+      </div>
 
-    <div class="box">
-      Work
-      5hrs <!-- daily -->
-      Previous - 7hrs <!-- daily -->
-      32hrs <!-- weekly -->
-      Previous - 36hrs <!-- weekly -->
-      103hrs <!-- monthly -->
-      Previous - 128hrs <!-- monthly -->
-    </div>
+      <nav class="navigation">
+        <ul>
+          <li></li>
+        </ul>
+        <!-- TODO: list items -->
+        <button class="cta cta--time-daily">Daily</button>
+        <button class="cta cta--time">Weekly</button>
+        <button class="cta cta--time">Monthly</button>
+      </nav>
+    </section>
+<!-- put modifier as high as possible -->
+    <section class="box box--work">
+      <header class="box__header">
+        <!-- <img class="header__icon" src="./media/icon-work.svg"> -->
+      </header>
+      <h2 class="title">Work</h2>
+      <p class="description">5hrs</p>
+      <p class="history">Previous - 7hrs</p>
+    </section>
 
-    <div class="box">
-      Play
-      1hr <!-- daily -->
-      Previous - 2hrs <!-- daily -->
-      10hrs <!-- weekly -->
-      Previous - 8hrs <!-- weekly -->
-      23hrs <!-- monthly -->
-      Previous - 29hrs <!-- monthly -->
-    </div>
+    <section class="box">
+      <header class="header header--play">
+        <img class="header__icon" src="./media/icon-play.svg">
+      </header>
+      <h2 class="title">Play</h2>
+      <p class="description">1hr</p>
+      <p class="history">Previous - 2hrs</p>
+    </section>
 
-    <div class="box">
-      Study
-      0hrs <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      4hrs <!-- weekly -->
-      Previous - 7hrs <!-- weekly -->
-      13hrs <!-- monthly -->
-      Previous - 19hrs <!-- monthly -->
-    </div>
+    <section class="box">
+      <header class="header header--study">
+        <img class="header__icon" src="./media/icon-study.svg">
+      </header>
+      <h2 class="title">Study</h2>
+      <p class="description">0hrs</p>
+      <p class="history">Previous - 1hr</p>
+    </section>
 
-    <div class="box">
-      Exercise
-      1hr <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      4hrs <!-- weekly -->
-      Previous - 5hrs <!-- weekly -->
-      11hrs <!-- monthly -->
-      Previous - 18hrs <!-- monthly -->
-    </div>
+    <section class="box">
+      <header class="header header--exercise">
+        <img class="header__icon" src="./media/icon-exercise.svg">
+      </header>
+      <h2 class="title">Exercise</h2>
+      <p class="description">1hr</p>
+      <p class="history">Previous - 1hr</p>
+    </section>
 
-    <div class="box">
-      Social
-      1hr <!-- daily -->
-      Previous - 3hrs <!-- daily -->
-      5hrs <!-- weekly -->
-      Previous - 10hrs <!-- weekly -->
-      21hrs <!-- monthly -->
-      Previous - 23hrs <!-- monthly -->
-    </div>
+    <section class="box">
+      <header class="header header--social">
+        <img class="header__icon" src="./media/icon-social.svg">
+      </header>
+      <h2 class="title">Social</h2>
+      <p class="description">1hr</p>
+      <p class="history">Previous - 3hrs</p>
+    </section>
 
-    <div class="box">
-      Self Care
-      0hrs <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      2hrs <!-- weekly -->
-      Previous - 2hrs <!-- weekly -->
-      7hrs <!-- monthly -->
-      Previous - 11hrs <!-- monthly -->
-    </div>
-  </div>
+    <section class="box">
+      <header class="header header--self-care">
+        <img class="header__icon" src="./media/icon-self-care.svg"/>
+      </header>
+      <h2 class="title">Self Care</h2>
+      <p class="description">0hrs</p>
+      <p class="history">Previous - 1hr</p>
+    </section>
+  </main>
 </body>
 </html>
